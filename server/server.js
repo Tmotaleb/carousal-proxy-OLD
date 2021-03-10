@@ -11,6 +11,7 @@ const app = express();
 // Logging
 app.use(morgan('dev'));
 app.use(express.static(PUBLIC_DIR));
+// app.use('/public/css', express.static(path.join(__dirname + '/public/css')))
 
 // Handle asset request for webpack bundles by forwarding request to the bundles router
 app.use('/bundles', router.bundles);

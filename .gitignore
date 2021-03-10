@@ -1,1 +1,8 @@
-node_modules/
+# NPM
+node_modules
+
+# AWS PEM Key
+*.pem
+
+# login bash script for EC2 instance
+login.sh
